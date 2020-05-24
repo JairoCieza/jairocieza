@@ -1,0 +1,36 @@
+<%@ page pageEncoding="UTF-8" %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="navbar-brand" href="productos.jsp" target="cargar"> CONSULTAR PRODUCTOS <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="navbar-brand" href="movimientos.jsp" target="cargar"> CONSULTAR MOVIMIENTOS <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+            <div class="my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="badge badge-pill badge-light text-info">${usuarios.nombres.toUpperCase()}  ${usuarios.apellidos.toUpperCase()} <img src="../../img/icons8-usuario-masculino-en-círculo-64.png" width="24" height="24"/> </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><i><img src="../../img/icons8-engranaje-pok-50.png" width="20" height="20"/> CONFIRURACIONES</i></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../../Login?accion=LOGOUT"><i><img src="../../img/icons8-exportar-24.png" width="20" height="20"/> SALIR</i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div style="clear: both"></div>
